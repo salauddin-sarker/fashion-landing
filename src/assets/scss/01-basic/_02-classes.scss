@@ -1,0 +1,132 @@
+/*----------------------------------------*/
+/*  02. Classes CSS
+/*----------------------------------------*/
+
+@media (min-width: 1400px) {
+    .custom-container {
+        max-width: 1526px;
+    }
+
+    // .container,
+    // .container-lg,
+    // .container-md,
+    // .container-sm,
+    // .container-xl,
+    // .container-xxl {
+    //     max-width: 1526px;
+    // }
+}
+
+.custom-container,
+.container-fluid {
+    @media #{$extraBig-device, $laptop-device, $desktop-device, $tablet-device} {
+        padding: 0 40px;
+    }
+    @media #{$large-mobile} {
+        padding: 0 20px;
+    }
+}
+
+// Section Title
+.section-title {
+    &__title {
+        color: $heading-color;
+        font-size: 46px;
+        font-weight: 400;
+        line-height: 1;
+
+        @media #{$laptop-device, $desktop-device, $tablet-device} {
+            font-size: 32px;
+        }
+        @media #{$large-mobile} {
+            font-size: 22px;
+        }
+    }
+    & p {
+        color: #a8a8a8;
+        font-size: 18px;
+        line-height: 1.4;
+        max-width: 530px;
+        margin: 25px auto 0;
+
+        @media #{$laptop-device, $desktop-device, $tablet-device, $large-mobile} {
+            font-size: 16px;
+        }
+    }
+}
+
+.section-padding {
+    padding: 85px 0;
+
+    @media #{$large-mobile} {
+        padding: 60px 0;
+    }
+}
+.section-padding-1 {
+    padding-top: 85px;
+}
+
+.js-scroll {
+    opacity: 0;
+}
+
+.scrolled {
+    &.ShortFadeInDown {
+        animation: ShortFadeInDown 1s ease-in-out both;
+    }
+    &.ShortFadeInUp {
+        animation: ShortFadeInUp 1s ease-in-out both;
+    }
+
+    &.ShortFadeInLeft {
+        animation: ShortFadeInLeft 1s ease-in-out both;
+    }
+
+    &.ShortFadeInRight {
+        animation: ShortFadeInRight 1s ease-in-out both;
+    }
+}
+
+@keyframes ShortFadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -50px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes ShortFadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes ShortFadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes ShortFadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(50px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
