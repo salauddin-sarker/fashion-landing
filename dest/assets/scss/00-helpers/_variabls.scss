@@ -1,0 +1,35 @@
+/*----------------------------------------*/
+/*  01. Helpers CSS
+/*----------------------------------------*/
+
+// Font Family
+$font-family-base: "Josefin Sans", sans-serif;
+$headings-font-family: "Josefin Sans", sans-serif;
+$headings-font-family-02: "Garamond Premiere Pro";
+
+// Responsive Variables
+$extraBig-device: "only screen and (min-width: 1550px)";
+$laptop-device: "only screen and (min-width: 1200px) and (max-width: 1549px)";
+$desktop-device: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$tablet-device: "only screen and (min-width: 768px) and (max-width: 991px)";
+$large-mobile: "only screen and (max-width: 767px)";
+$small-mobile: "only screen and (max-width: 575px)";
+$extra-small-mobile: "only screen and (max-width: 479px)";
+
+//===============================
+// Bootstrap Variables Overright
+//===============================
+
+// Color
+$brand-color: #d68d67;
+$body-color: #727272;
+$heading-color: #171717;
+$border-color: #dedede;
+$three-color: #938683;
+//
+$white: #ffffff;
+$black: #000000;
+$grey: #bcbcbc;
+
+// Transition
+$transition-base: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);

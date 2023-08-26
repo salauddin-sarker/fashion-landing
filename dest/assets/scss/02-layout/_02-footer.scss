@@ -1,0 +1,83 @@
+/*----------------------------------------*/
+/*  02. Footer CSS
+/*----------------------------------------*/
+
+// Footer area
+.footer-area {
+}
+
+// Footer Content
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+
+    @media #{$laptop-device, $desktop-device} {
+        max-width: 560px;
+    }
+
+    &__sub-title {
+        color: $brand-color;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.2;
+
+        @media #{$laptop-device, $desktop-device, $tablet-device} {
+            font-size: 22px;
+        }
+        @media #{$large-mobile} {
+            font-size: 18px;
+        }
+    }
+    &__title {
+        color: $heading-color;
+        font-size: 46px;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-top: 30px;
+
+        @media #{$laptop-device, $desktop-device, $tablet-device} {
+            font-size: 28px;
+            margin-top: 20px;
+        }
+        @media #{$large-mobile} {
+            font-size: 22px;
+        }
+    }
+}
+
+// Footer Copyright
+.footer-copyright {
+    padding: 20px 0;
+}
+
+// Copyright
+.copyright-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    direction: ltr;
+
+    &::before,
+    &::after {
+        display: block;
+        content: "";
+        border-bottom: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        border-top: 1px solid #d3d3d3;
+    }
+
+    & p {
+        color: #747474;
+        font-size: 18px;
+        flex-shrink: 0;
+        max-width: 95%;
+        margin: 0 50px;
+
+        @media #{$large-mobile} {
+            font-size: 16px;
+            margin: 0 20px;
+        }
+    }
+}

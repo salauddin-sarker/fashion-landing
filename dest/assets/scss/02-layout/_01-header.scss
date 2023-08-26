@@ -1,0 +1,56 @@
+/*----------------------------------------*/
+/*  01. Header CSS
+/*----------------------------------------*/
+
+// Header Area
+.header-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+// Header Menu
+.header-menu {
+}
+
+// Header Menu Items
+.header-menu-items {
+    margin-left: -40px;
+    margin-right: -40px;
+    display: flex;
+    justify-content: center;
+    padding: 55px 0;
+
+    @media #{$laptop-device, $desktop-device, $tablet-device, $large-mobile} {
+        padding: 48px 0;
+    }
+    @media #{$large-mobile} {
+        margin-left: -14px;
+        margin-right: -14px;
+    }
+
+    & li {
+        padding: 0 40px;
+
+        @media #{$large-mobile} {
+            padding: 0 14px;
+        }
+
+        & a {
+            font-size: 18px;
+            font-weight: 400;
+            color: $heading-color;
+            transition: $transition-base;
+
+            @media #{$laptop-device, $desktop-device, $tablet-device, $large-mobile} {
+                font-size: 16px;
+            }
+
+            &:hover {
+                color: $brand-color;
+            }
+        }
+    }
+}
